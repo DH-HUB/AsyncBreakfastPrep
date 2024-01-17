@@ -1,0 +1,15 @@
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.csproj.AssemblyReference.cache
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.AssemblyInfoInputs.cache
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.AssemblyInfo.cs
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.csproj.CoreCompileInputs.cache
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\bin\Debug\net7.0\AsyncBreakfastPrep.exe
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\bin\Debug\net7.0\AsyncBreakfastPrep.deps.json
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\bin\Debug\net7.0\AsyncBreakfastPrep.runtimeconfig.json
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\bin\Debug\net7.0\AsyncBreakfastPrep.dll
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\bin\Debug\net7.0\AsyncBreakfastPrep.pdb
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.dll
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\refint\AsyncBreakfastPrep.dll
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.pdb
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\AsyncBreakfastPrep.genruntimeconfig.cache
+C:\Users\elian\OneDrive\Documents\Bureau\coursMns\projetCedricC\AsyncBreakfastPrep\obj\Debug\net7.0\ref\AsyncBreakfastPrep.dll
