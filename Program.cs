@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 class Program
@@ -10,67 +11,70 @@ class Program
         Task baconTask = FryBaconAsync(3);
         Task toastTask = ToastBreadAsync(2);
 
-        // Attendre que le café soit prêt
-        await coffeeTask;
+        var breakfastTasks = new List<Task> { coffeeTask, eggTask, baconTask, toastTask };
 
-        // Attendre que les œufs soient prêts
-        await eggTask;
+        while (breakfastTasks.Count > 0)
+        {
+            Task finishedTask = await Task.WhenAny(breakfastTasks);
+            if (finishedTask == coffeeTask)
+            {
+                Console.WriteLine("Café prêt !");
+            }
+            else if (finishedTask == eggTask)
+            {
+                Console.WriteLine("Œufs prêts !");
+            }
+            else if (finishedTask == baconTask)
+            {
+                Console.WriteLine("Bacon prêt !");
+            }
+            else if (finishedTask == toastTask)
+            {
+                Console.WriteLine("Pain grillé prêt !");
+                await ApplyJamAsync(); // Appliquer la confiture une fois le pain grillé prêt
+            }
 
-        // Attendre que le bacon soit prêt
-        await baconTask;
+            breakfastTasks.Remove(finishedTask);
+        }
 
-        // Attendre que le pain soit grillé
-        await toastTask;
-
-        // Mettre de la confiture sur le pain grillé
-        await ApplyJamAsync();
-
-        // Préparer le jus
-        await JuiceAsync();
-
+        await JuiceAsync(); // Verser le jus à la fin
         Console.WriteLine("Petit déjeuner prêt !");
-    }
-
-    static async Task MakeCoffeeAsync()
+        static async Task MakeCoffeeAsync()
     {
-        Console.WriteLine("Faire le café...");
+        Console.WriteLine("Faire le café");
         await Task.Delay(1000); // Simuler le temps de préparation du café
-        Console.WriteLine("Café prêt !");
     }
 
     static async Task FryEggsAsync(int count)
     {
-        Console.WriteLine($"Cuire {count} œufs...");
+        Console.WriteLine($"Cuire {count} œufs");
         await Task.Delay(2000); // Simuler le temps de cuisson des œufs
-        Console.WriteLine($"{count} œufs prêts !");
     }
 
     static async Task FryBaconAsync(int slices)
     {
-        Console.WriteLine($"Cuire {slices} tranches de bacon...");
+        Console.WriteLine($"Cuire {slices} tranches de bacon");
         await Task.Delay(3000); // Simuler le temps de cuisson du bacon
-        Console.WriteLine($"{slices} tranches de bacon prêtes !");
     }
 
     static async Task<string> ToastBreadAsync(int slices)
     {
-        Console.WriteLine($"Griller {slices} tranches de pain...");
+        Console.WriteLine($"Griller {slices} tranches de pain");
         await Task.Delay(1500); // Simuler le temps de grillage
-        Console.WriteLine($"{slices} tranches de pain grillées !");
         return $"{slices} tranches de pain grillées";
     }
 
     static async Task ApplyJamAsync()
     {
-        Console.WriteLine("Mettre de la confiture sur le pain...");
+        Console.WriteLine("Mettre de la confiture sur le pain");
         await Task.Delay(500); // Simuler le temps d'application de la confiture
-        Console.WriteLine("Confiture appliquée !");
     }
 
-    static async Task JuiceAsync()
+    static async Task  JuiceAsync()
     {
         Console.WriteLine("Verser du jus...");
         await Task.Delay(500); // Simuler le temps de verser du jus
-        Console.WriteLine("Jus versé !");
     }
+}
+
 }
