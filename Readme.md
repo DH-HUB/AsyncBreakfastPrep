@@ -22,4 +22,8 @@ Fonctionnement:
 Le programme initie plusieurs tâches asynchrones, chacune représentant une partie de la préparation du petit déjeuner. Chaque tâche a un délai différent, simulant le temps nécessaire pour préparer chaque élément. Task.WhenAny est utilisé pour attendre et traiter chaque tâche à mesure qu'elle se termine.
 
 Console:
-![Alt text](image.png)
+- ![Alt text](image.png)
+
+- Version avec utilisation du WhenAny 
+
+![Alt text](image-1.png)
